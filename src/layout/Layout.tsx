@@ -2,10 +2,18 @@ import { Outlet } from "react-router-dom";
 
 const Layout = () => {
   return (
-    <div>
-      <p>hola</p>
+    <div className="md:flex md:min-h-screen">
+      <div className="md:w-1/4 bg-indigo-900 px-5 py-10">
+        <h2 className="text-4xl font-black text-center text-white">
+          CRM - Clients
+        </h2>
+        <nav>
+        </nav>
+      </div>
 
-      <Outlet />
+      <div className="md:w-3/4">
+        <Outlet />
+      </div>
     </div>
   );
 };
